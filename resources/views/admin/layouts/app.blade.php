@@ -31,6 +31,20 @@
                 </a>
             </li>
 
+            <li class="nav-item {{ request()->routeIs('departments.*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('departments.index') }}">
+                    <i class="fas fa-fw fa-sitemap"></i>
+                    <span>Data Departemen</span>
+                </a>
+            </li>
+
+            <li class="nav-item {{ request()->routeIs('employees.*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('employees.index') }}">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Data Pegawai</span>
+                </a>
+            </li>
+
             <hr class="sidebar-divider d-none d-md-block">
 
             <div class="text-center d-none d-md-inline">
